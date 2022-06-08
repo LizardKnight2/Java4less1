@@ -9,7 +9,7 @@
 
 <VBox prefHeight="434.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18"
       xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cloudapplication.ChatController">
-      <HBox>
+      <HBox VBox.vgrow="ALWAYS">
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
                   <HBox prefHeight="100.0" prefWidth="200.0" />
                   <ListView fx:id="clientView" layoutX="-2.0" prefHeight="400.0" prefWidth="298.0" />
@@ -17,7 +17,7 @@
             </AnchorPane>
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
-            <Button onAction="#upload" mnemonicParsing="false" text="To server"/>
-            <Button onAction="#download" mnemonicParsing="false" text="From server" />
+            <Button onAction="#upload" mnemonicParsing="false" text="Add file"/>
+            <Button onAction="#download" mnemonicParsing="false" text="remove file" />
       </HBox>
 </VBox>

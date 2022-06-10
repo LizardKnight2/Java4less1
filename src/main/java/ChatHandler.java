@@ -7,8 +7,8 @@ import java.util.List;
 public class ChatHandler implements Runnable {
     private final String serverDir = "server_files";
 
-    private DataInputStream inputStream;
-    private DataOutputStream outputStream;
+    private final DataInputStream inputStream;
+    private final DataOutputStream outputStream;
 
     public ChatHandler(Socket socket) throws IOException {
         inputStream = new DataInputStream(socket.getInputStream());

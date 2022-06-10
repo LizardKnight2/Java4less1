@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class Network {
-    private DataInputStream inputStream;
-    private DataOutputStream outputStream;
+    private final DataInputStream inputStream;
+    private final DataOutputStream outputStream;
 
     public Network(int port) throws IOException {
         Socket socket = new Socket("localhost", port);

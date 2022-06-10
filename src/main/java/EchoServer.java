@@ -12,6 +12,7 @@ public class EchoServer {
                 ChatHandler handler = new ChatHandler(socket);
                 new Thread(handler).start();
             }
+
         }
 
     }

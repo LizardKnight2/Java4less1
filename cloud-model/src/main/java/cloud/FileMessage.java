@@ -11,10 +11,12 @@ public class FileMessage implements CloudMessage {
     private final long size;
     private final byte[] data;
     private final String name;
+    private final String login;
 
-    public FileMessage(Path path) throws IOException {
+    public FileMessage(Path path, String login) throws IOException {
         size = Files.size(path);
         data = Files.readAllBytes(path);
         name = path.getFileName().toString();
+        this.login = login;
     }
 }
